@@ -20,6 +20,3 @@ class Person
     false
   end
 end
-
-new_person = Person.new(17)
-puts new_person.can_use_service?
