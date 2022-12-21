@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 require_relative './book_object'
 require_relative './teacher_object'
 require_relative './student_object'
