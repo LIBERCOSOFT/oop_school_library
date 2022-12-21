@@ -59,9 +59,16 @@ class App
         parent_permission = false
       end
       @person.push(Student.new(age, name, parent_permission))
-      puts 'Student created successfully'
+      puts 'Student created successfully!'
     when '2'
-      puts 'Waiting'
+      print 'Age: '
+      age = gets.chomp
+      print 'Name: '
+      name = gets.chomp
+      print 'Specialization: '
+      specialization = gets.chomp
+      @person.push(Teacher.new(age, name, specialization))
+      puts 'Teacher created successfully!'
     else
       puts 'Invalid number entered, Please select between 1 - 2'
     end
