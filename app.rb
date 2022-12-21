@@ -33,24 +33,27 @@ class App
     case option
     when '1'
       list_books
-      start_app
     when '2'
       list_people
-      start_app
     when '3'
       create_person
-      start_app
     when '4'
       create_book
-      start_app
     when '5'
       create_rentals
+    when '6'
+      list_rentals_per_id
     when '7'
-      nil
+      puts 'Thank you for using this app!'
     else
       puts 'Invalid number selected, Please pick from 1 - 7'
       menu_option = gets.chomp
       option_selection(menu_option)
+    end
+    if option == '7'
+      nil
+    else
+      start_app
     end
   end
 
@@ -127,6 +130,16 @@ class App
 
     @rentals.push(Rental.new(date, @person[person_selection], @books[book_selection]))
     puts 'Rental created successfully'
+  end
+
+  def list_rentals_per_id
+    print 'ID of person: '
+    person_id = gets.chomp.to_i
+
+    puts 'Rentals:'
+    @rentals.each do |rental|
+      puts "Date: #{rental.date}, Book #{rental.book.title} by #{rental.book.author}" if rental.person.id == person_id
+    end
   end
 end
 
