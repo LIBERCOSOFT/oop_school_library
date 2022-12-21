@@ -33,13 +33,18 @@ class App
     case option
     when '1'
       list_books
+      start_app
     when '2'
       list_people
+      start_app
     when '3'
       create_person
       start_app
     when '4'
       create_book
+      start_app
+    when '5'
+      create_rentals
     when '7'
       nil
     else
@@ -100,7 +105,28 @@ class App
     @person.each do |per_person|
       puts "#{[per_person.class]} Name: #{per_person.name}, ID: #{per_person.id}, Age: #{per_person.age}"
     end
-    start_app
+  end
+
+  def create_rentals
+    puts 'Select a book from the following list by number'
+    @books.each_with_index do |book, index|
+      puts "#{index}) Title: #{book.title}, Author: #{book.author}"
+    end
+    book_selection = gets.chomp.to_i
+    puts "\n"
+
+    puts 'Select a person from the following list by number (not id)'
+    @person.each_with_index do |per_person, index|
+      puts "#{index}) #{[per_person.class]} Name: #{per_person.name}, ID: #{per_person.id}, Age: #{per_person.age}"
+    end
+    person_selection = gets.chomp.to_i
+    puts "\n"
+
+    print 'Date: '
+    date = gets.chomp
+
+    @rentals.push(Rental.new(date, @person[person_selection], @books[book_selection]))
+    puts 'Rental created successfully'
   end
 end
 
