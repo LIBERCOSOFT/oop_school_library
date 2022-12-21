@@ -29,30 +29,16 @@ class App
 
   def option_selection(option)
     case option
-    when '1'
-      list_books
-    when '2'
-      list_people
-    when '3'
-      create_person
-    when '4'
-      create_book
-    when '5'
-      create_rentals
-    when '6'
-      list_rentals_per_id
-    when '7'
-      puts 'Thank you for using this app!'
-    else
-      puts 'Invalid number selected, Please pick from 1 - 7'
-      menu_option = gets.chomp
-      option_selection(menu_option)
+    when '1' then list_books
+    when '2' then list_people
+    when '3' then create_person
+    when '4' then create_book
+    when '5' then create_rentals
+    when '6' then list_rentals_per_id
+    when '7' then puts 'Thank you for using this app!'
+    else puts 'Invalid number selected, Please pick from 1 - 7'
     end
-    if option == '7'
-      nil
-    else
-      start_app
-    end
+    start_app unless option == '7'
   end
 
   def create_person
