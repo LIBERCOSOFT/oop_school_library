@@ -33,12 +33,13 @@ class App
     case option
     when '1'
       list_books
-      start_app
+    when '2'
+      list_people
     when '3'
       create_person
+      start_app
     when '4'
       create_book
-      start_app
     when '7'
       nil
     else
@@ -93,6 +94,13 @@ class App
 
   def list_books
     @books.each { |book| puts "Title: #{book.title}, Author: #{book.author}" }
+  end
+
+  def list_people
+    @person.each do |per_person|
+      puts "#{[per_person.class]} Name: #{per_person.name}, ID: #{per_person.id}, Age: #{per_person.age}"
+    end
+    start_app
   end
 end
 
