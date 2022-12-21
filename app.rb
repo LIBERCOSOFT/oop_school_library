@@ -32,6 +32,8 @@ class App
     case option
     when '3'
       create_person
+    when '4'
+      create_book
     when '7'
       nil
     else
@@ -72,6 +74,16 @@ class App
     else
       puts 'Invalid number entered, Please select between 1 - 2'
     end
+  end
+
+  def create_book
+    print 'Title: '
+    title = gets.chomp
+    print 'Author: '
+    author = gets.chomp
+
+    @books.push(Book.new(title, author))
+    puts 'Book created successfully'
   end
 end
 
