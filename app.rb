@@ -12,8 +12,9 @@ class App
     @rentals = []
   end
 
+  puts 'Welcome to School Library App!'
+
   def start_app
-    puts 'Welcome to School Library App!'
     puts "\n"
     puts 'Please choose an option by entering a number:'
     puts '1 - List all books'
@@ -30,10 +31,14 @@ class App
 
   def option_selection(option)
     case option
+    when '1'
+      list_books
+      start_app
     when '3'
       create_person
     when '4'
       create_book
+      start_app
     when '7'
       nil
     else
@@ -84,6 +89,10 @@ class App
 
     @books.push(Book.new(title, author))
     puts 'Book created successfully'
+  end
+
+  def list_books
+    @books.each { |book| puts "Title: #{book.title}, Author: #{book.author}" }
   end
 end
 
