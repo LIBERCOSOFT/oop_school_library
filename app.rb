@@ -142,5 +142,3 @@ class App
     end
   end
 end
-
-puts App.new.start_app
