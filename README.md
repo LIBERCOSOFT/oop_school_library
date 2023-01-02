@@ -50,13 +50,19 @@ Clone this repository to your desired folder.
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤 **Kolapo Precious Akinrinlola**
 
 - GitHub: [LIBERCOSOFT](https://github.com/LIBERCOSOFT)
 - Twitter: [@Gerfieldt](https://twitter.com/Gerfieldt)
 - LinkedIn: [Kolapo Akinrinlola](https://linkedin.com/in/kolapo-akinrinlola-072097110)
+
+👤 **Amine**
+
+- GitHub: [@ouasamine](https://github.com/ouasamine)
+- Twitter: [@ouass_amine](https://twitter.com/ouass_amine)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/amine-ouassef-314686214/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
