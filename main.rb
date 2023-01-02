@@ -19,7 +19,6 @@ class Main
     puts '5 - Create a rental'
     puts '6 - List all rentals for a given person id'
     puts '7 - Exit'
-  
     menu_option = @app.user_input
     option_selection(menu_option)
   end
@@ -37,7 +36,6 @@ class Main
     end
     start_app unless option == '7'
   end
-
 end
 
 app = App.new
