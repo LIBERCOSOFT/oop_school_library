@@ -5,7 +5,7 @@
     - [Tech Stack](#tech-stack)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
-  - [Setup](#setup)  
+  - [Setup](#setup)
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -15,7 +15,7 @@
 
 # 📖 OOP School Library <a name="about-project"></a>
 
-**OOP School Library** is a ruby based a tool to record what books are in the library and who borrows them. The app will add  new students or teachers, add new books, and save records of who borrowed a given book and when.
+**OOP School Library** is a ruby based a tool to record what books are in the library and who borrows them. The app will add new students or teachers, add new books, and save records of who borrowed a given book and when.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -44,19 +44,29 @@ In order to run this project you need: Ruby and Git installed on your local comp
 
 Clone this repository to your desired folder.
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤 **Kolapo Precious Akinrinlola**
 
 - GitHub: [LIBERCOSOFT](https://github.com/LIBERCOSOFT)
 - Twitter: [@Gerfieldt](https://twitter.com/Gerfieldt)
 - LinkedIn: [Kolapo Akinrinlola](https://linkedin.com/in/kolapo-akinrinlola-072097110)
+
+👤 **Amine**
+
+- GitHub: [@ouasamine](https://github.com/ouasamine)
+- Twitter: [@ouass_amine](https://twitter.com/ouass_amine)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/amine-ouassef-314686214/)
+
+👤 **Zuhaib Amjad**
+
+- GitHub: [@Zuhaib042](https://github.com/Zuhaib042)
+- Twitter: [@Zuhaib042](https://twitter.com/Zuhaib042)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/zuhaib-amjad-488914234/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
