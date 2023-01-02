@@ -50,32 +50,38 @@ class App
     person_type = user_input
 
     case person_type
-    when '1'
-      print 'Age: '
-      age = user_input
-      print 'Name: '
-      name = user_input
-      print 'Has parent permission? [Y/N]: '
-      parent_permission = user_input
-      if %w[Y y YES yes].include?(parent_permission)
-        parent_permission = true
-      elsif %w[N n NO no].include?(parent_permission)
-        parent_permission = false
-      end
-      @person.push(Student.new(age, name, parent_permission))
-      puts 'Student created successfully!'
-    when '2'
-      print 'Age: '
-      age = user_input
-      print 'Name: '
-      name = user_input
-      print 'Specialization: '
-      specialization = user_input
-      @person.push(Teacher.new(age, name, specialization))
-      puts 'Teacher created successfully!'
+    when '1' then create_student
+    when '2' then create_teacher
     else
       puts 'Invalid number entered, Please select between 1 - 2'
     end
+  end
+
+  def create_student
+    print 'Age: '
+    age = user_input
+    print 'Name: '
+    name = user_input
+    print 'Has parent permission? [Y/N]: '
+    parent_permission = user_input
+    if %w[Y y YES yes].include?(parent_permission)
+      parent_permission = true
+    elsif %w[N n NO no].include?(parent_permission)
+      parent_permission = false
+    end
+    @person.push(Student.new(age, name, parent_permission))
+    puts 'Student created successfully!'
+  end
+
+  def create_teacher
+    print 'Age: '
+    age = user_input
+    print 'Name: '
+    name = user_input
+    print 'Specialization: '
+    specialization = user_input
+    @person.push(Teacher.new(age, name, specialization))
+    puts 'Teacher created successfully!'
   end
 
   def create_book
